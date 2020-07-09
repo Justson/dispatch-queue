@@ -1,0 +1,3 @@
+rootProject.name='Queue'
+include ':app'
+include ':library'
