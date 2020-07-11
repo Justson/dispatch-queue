@@ -1,13 +1,22 @@
 # Dispatch-Queue
 
-拓展了Android OS MessageQueue，提供了以下功能
-
-
+### 拓展了Android OS MessageQueue，提供了以下功能
 
 * 线程可以配对交换元素在同步点
 * 线程空闲后执行task
 * 阻塞执行
 * 线程之间交叉执行
+
+
+
+## 引入
+
+* Gradle
+
+
+```gradle
+implementation 'com.github.Justson:dispatch-queue:v1.0.0'
+```
 
 
 
