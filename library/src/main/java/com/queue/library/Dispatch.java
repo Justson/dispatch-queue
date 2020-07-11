@@ -193,13 +193,6 @@ public class Dispatch {
         postAtFont(runnable);
     }
 
-    public void postRunnableQuick(Runnable runnable) {
-        if (Looper.myLooper() == getLooper()) {
-            runnable.run();
-            return;
-        }
-        postRunnable(runnable);
-    }
 
     public void post(Runnable runnable) {
         if (Looper.myLooper() == getLooper()) {
