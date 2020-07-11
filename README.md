@@ -15,7 +15,7 @@
 
 
 ```gradle
-implementation 'com.github.Justson:dispatch-queue:v1.0.0'
+implementation 'com.github.Justson:dispatch-queue:v1.0.3'
 ```
 
 
