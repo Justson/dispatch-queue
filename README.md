@@ -1,6 +1,6 @@
 # Dispatch-Queue
 
-### 拓展了Android OS MessageQueue，提供了以下功能
+### 拓展了Android OS MessageQueue
 
 
 ## 引入
