@@ -24,6 +24,7 @@ import android.os.MessageQueue;
 import java.lang.reflect.Field;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Exchanger;
+import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
@@ -35,7 +36,7 @@ import androidx.annotation.Nullable;
  * @date 2019/2/15
  * @since 1.0.0
  */
-public class Dispatch {
+public class Dispatch implements Executor {
 
     private volatile Handler handler = null;
     private static final String TAG = Dispatch.class.getSimpleName();
@@ -280,5 +281,10 @@ public class Dispatch {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void execute(Runnable command) {
+        postRunnable(command);
     }
 }
