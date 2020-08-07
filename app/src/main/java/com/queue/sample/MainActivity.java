@@ -2,7 +2,7 @@ package com.queue.sample;
 
 import android.os.Bundle;
 
-import com.queue.library.Dispatch;
+import com.queue.library.DispatchThread;
 import com.queue.library.DispatchThread;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -58,10 +58,12 @@ public class MainActivity extends AppCompatActivity {
 //            // output  the order "1 2 3 4"
 //        });
 
+        DispatchThread.create();
+
         /**
          * use b
          */
-        Dispatch messageDispatch = DispatchThread.create("message");
+        DispatchThread messageDispatch = DispatchThread.create("message");
 
         messageDispatch.postRunnable(() -> {
             // do you work , work in message thread

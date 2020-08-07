@@ -23,13 +23,13 @@ import android.os.Looper;
  * @since 1.0.0
  */
 public final class GlobalQueue {
-    private static volatile Dispatch mMainQueue = null;
+    private static volatile DispatchThread mMainQueue = null;
 
-    public static Dispatch getMainQueue() {
+    public static DispatchThread getMainQueue() {
         if (mMainQueue == null) {
             synchronized (GlobalQueue.class) {
                 if (mMainQueue == null) {
-                    mMainQueue = new Dispatch(Looper.getMainLooper());
+                    mMainQueue = new DispatchThread(Looper.getMainLooper());
                 }
             }
         }
