@@ -1,4 +1,4 @@
-# DispatchThread-Queue
+# dispatch-queue
 
 ### 拓展了Android OS MessageQueue
 
