@@ -1,4 +1,4 @@
-# Dispatch-Queue
+# DispatchThread-Queue
 
 ### 拓展了Android OS MessageQueue
 
@@ -9,7 +9,7 @@
 
 
 ```gradle
-implementation 'com.github.Justson:dispatch-queue:v1.0.3'
+implementation 'com.github.Justson:dispatch-queue:v1.0.5'
 ```
 
 
@@ -51,10 +51,10 @@ implementation 'com.github.Justson:dispatch-queue:v1.0.3'
 
 
 
-## 创建 Dispatch Thread
+## 创建 DispatchThread 
 
 ```
-        Dispatch messageDispatch = DispatchThread.create("message");
+        DispatchThread messageDispatch = DispatchThread.create("message");
 
         messageDispatch.postRunnable(() -> {
             // do you work , work in message thread
