@@ -1,6 +1,7 @@
-# dispatch-queue
 
-### 拓展了Android OS MessageQueue
+## 拓展了Android OS MessageQueue
+
+### Dispatch Queue是一个扩展Android MessageQueue的超高性能队列，类似协程支持同步返回，同时也支持异步执行，可包装主线程,灵活调度
 
 
 ## 引入
